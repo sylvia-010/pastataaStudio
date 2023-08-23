@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Document</title>
+
+
+
+
+</head>
+
+<body>
+    <div class="top">
+        <nav class="nav">
+            <div class="nav_left">
+                <a href="about.html">
+                    <img class="logo" src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="nav_right">
+                <ul class="navbar">
+                    <li class="navbar_type">
+                        <a href="about.html">關於我們</a>
+                        <div class="deco"></div>
+                    </li>
+                    <li class="navbar_type">
+                        <a href="pasta.html">認識麵條</a>
+                        <div class="deco"></div>
+                    </li>
+                    <li class="navbar_type">
+                        <a href="cook.html">料理教室</a>
+                        <div class="deco"></div>
+                    </li>
+                    <li class="navbar_type01">
+                        <a href="search.html">
+                            <img class="search" src="img/Search.svg" alt=""></a>
+                        <div class="text">輸入文字</div>
+
+                    </li>
+                    <li class="navbar_type01">
+                        <a href="cart">
+                            <img class="cart" src="img/cart.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="banner">
+                <img src="img/banner.svg" alt="">
+            </div>
+            <div class="slogan">
+                <img src="img/slogan.svg" alt="">
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/banner.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.svg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="brand">
+
+                <h1>品牌故事</h1>
+                <img class="deco_noodle" src="img/deco_noodle.svg" alt="">
+
+                <div class="brand_story">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="team">
+
+                <h1>團隊夥伴</h1>
+                <img class="deco_noodle" src="img/deco_noodle.svg" alt="">
+
+                <div class="team_partner">
+                    <div class="partner01">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="partner02">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="partner03">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="chef_deco">
+            <img src="img/chef_deco.svg" alt="">
+        </div>
+        <ul class="contact">
+            <li><img class="facebook" src="" alt=""></li>
+            <li><img class="instagram" src="" alt=""></li>
+            <li><img class="email" src="" alt=""></li>
+        </ul>
+        <p>版權所有Copyright&copy;2023 pastataa Studio All Rights Reserved. </p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

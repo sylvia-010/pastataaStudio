@@ -1,0 +1,138 @@
+body {
+    .top {
+        margin: 0 auto;
+
+        #knpasta {
+            background-color: $primary;
+            padding: 3px 5px;
+            border-radius: 5px;
+
+        }
+
+        .main {
+            .slogan {
+                padding-top: 10%;
+            }
+
+            .knpasta {
+                padding-top: 10%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                
+
+                .card {
+                    
+                    .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .wrap {
+                            margin: 2%;
+                         
+                            .card_type {
+                                // display: flex;
+                                // justify-content: center;
+
+                                .card_group {
+                                    height: 370px;
+                                    width: 252px;
+                                    border: 3px solid $primary;
+                                    border-radius: 30px;
+
+                                    .card_top {
+                                        display: flex;
+                                        justify-content: center;
+                                        height: 230px;
+
+                                        .top_group {
+                                            margin-top: 35px;
+
+                                            .card_pro {
+                                                width: 50%;
+                                            }
+
+                                            .card_name {
+                                                text-align: center;
+                                                background-color: $primary;
+                                                border-radius: 10px;
+                                                margin: 10%;
+                                                font-size: 22px;
+                                            }
+                                        }
+                                    }
+
+                                    .card_bottom {
+                                        text-align: center;
+
+                                        .bottom_bg {
+                                            display: block;
+                                            width: 242px;
+                                            height: 134px;
+                                            background: $primary;
+                                            border-radius: 0 0 25px 25px;
+                                            margin-left: 5px;
+                                            margin-top: 2px;
+
+                                            h3 {
+                                                font-size: 22px;
+                                            }
+
+                                            p {
+                                                font-size: 16px;
+                                                padding-top: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .gocook {
+                display: flex;
+                justify-content: center;
+                margin: 10% 0;
+
+                a {
+                    background: $secondary;
+                    color: #151515;
+                    width: fit-content;
+                    padding: 1% 4%;
+                    border-radius: 10px;
+                    font-size: 22px;
+                }
+
+
+
+            }
+        }
+    }
+
+    .footer {}
+}
+
+
+@media (min-width:769px) {
+    body {
+        font-size: 18px;
+        max-width: none;
+
+        .top {
+            .main {
+                .knpasta {
+                    .card {
+                        .card_wrap {
+                            
+                            .card_type {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

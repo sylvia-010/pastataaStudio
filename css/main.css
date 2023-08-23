@@ -1,0 +1,307 @@
+body {
+  background-color: #151515;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.top {
+  margin: 0 auto;
+}
+.top .nav .nav_left {
+  display: flex;
+  margin: 5%;
+}
+.top .nav .nav_left .logo {
+  display: flex;
+  width: 25%;
+}
+.top .nav .nav_right {
+  display: flex;
+  font-size: 10px;
+  margin: -2% 0;
+  padding: 10px 0;
+}
+.top .nav .nav_right .navbar {
+  display: flex;
+  margin-left: auto;
+}
+.top .nav .nav_right .navbar .navbar_type {
+  display: inline-block;
+  padding-left: 6px;
+}
+.top .nav .nav_right .navbar .navbar_type a {
+  display: inline;
+}
+.top .nav .nav_right .navbar .navbar_type .deco {
+  display: inline;
+  border-right: 3px solid #fff;
+  height: 22px;
+  padding-left: 10px;
+}
+.top .nav .nav_right .navbar .navbar_type01 {
+  display: flex;
+  padding-left: 6px;
+  margin-top: -10px;
+}
+.top .nav .nav_right .navbar .navbar_type01 .search {
+  display: flex;
+  padding-top: 11px;
+  width: 80%;
+}
+.top .nav .nav_right .navbar .navbar_type01 .text {
+  display: flex;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.4117647059);
+  margin: 10px 2px;
+}
+.top .nav .nav_right .navbar .navbar_type01 .cart {
+  display: flex;
+  margin-top: 7px;
+  width: 50%;
+}
+.top .main .banner {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.top .main .banner img {
+  display: flex;
+  width: 85%;
+}
+.top .main .slogan {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.top .main .slogan img {
+  display: flex;
+  width: 80%;
+}
+.top .main .swiper {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.top .main .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top .main .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top .main .brand {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.top .main .brand h1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+}
+.top .main .brand .deco_noodle {
+  display: flex;
+  justify-content: center;
+  padding: 0 122px;
+  margin-top: -18px;
+}
+.top .main .team {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.top .main .team h1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+}
+.top .main .team .deco_noodle {
+  display: flex;
+  justify-content: center;
+  padding: 0 122px;
+  margin-top: -18px;
+}
+.footer {
+  background-color: #208553;
+  width: 100%;
+}
+.footer .chef_deco {
+  display: flex;
+  justify-content: center;
+}
+.footer .chef_deco img {
+  display: flex;
+  width: 50%;
+}
+.footer p {
+  font-size: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+    max-width: none;
+  }
+  body .top {
+    margin: 0 auto;
+    padding: 0 6%;
+  }
+  body .top .nav {
+    margin: none;
+  }
+  body .top .nav .nav_left .logo {
+    display: flex;
+    width: 100%;
+  }
+  body .top .nav .nav_right .navbar {
+    margin-top: -10%;
+  }
+  body .top .nav .nav_right .navbar .navbar_type {
+    margin: 0 5px;
+  }
+  body .top .nav .nav_right .navbar .navbar_type a {
+    font-size: 22px;
+  }
+  body .top .nav .nav_right .navbar .navbar_type01 {
+    margin-top: -2px;
+  }
+  body .top .nav .nav_right .navbar .navbar_type01 .deco {
+    margin: none;
+  }
+  body .top .nav .nav_right .navbar .navbar_type01 .search {
+    padding-top: none;
+  }
+  body .top .main .banner img {
+    display: flex;
+    width: 100%;
+  }
+  body .top .main .brand h1 {
+    font-size: 28px;
+  }
+  body .top .main .brand .deco_noodle {
+    margin-top: -55px;
+  }
+  body .top .main .team h1 {
+    font-size: 28px;
+  }
+  body .top .main .team .deco_noodle {
+    margin-top: -55px;
+  }
+}
+body .top {
+  margin: 0 auto;
+}
+body .top #knpasta {
+  background-color: #208553;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+body .top .main .slogan {
+  padding-top: 10%;
+}
+body .top .main .knpasta {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .top .main .knpasta .card .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .top .main .knpasta .card .container .wrap {
+  margin: 2%;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group {
+  height: 370px;
+  width: 252px;
+  border: 3px solid #208553;
+  border-radius: 30px;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_top {
+  display: flex;
+  justify-content: center;
+  height: 230px;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_top .top_group {
+  margin-top: 35px;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_top .top_group .card_pro {
+  width: 50%;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_top .top_group .card_name {
+  text-align: center;
+  background-color: #208553;
+  border-radius: 10px;
+  margin: 10%;
+  font-size: 22px;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_bottom {
+  text-align: center;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_bottom .bottom_bg {
+  display: block;
+  width: 242px;
+  height: 134px;
+  background: #208553;
+  border-radius: 0 0 25px 25px;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_bottom .bottom_bg h3 {
+  font-size: 22px;
+}
+body .top .main .knpasta .card .container .wrap .card_type .card_group .card_bottom .bottom_bg p {
+  font-size: 16px;
+  padding-top: 5px;
+}
+body .top .main .gocook {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+}
+body .top .main .gocook a {
+  background: #F6D164;
+  color: #151515;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1% 4%;
+  border-radius: 10px;
+  font-size: 22px;
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+    max-width: none;
+  }
+}/*# sourceMappingURL=main.css.map */
