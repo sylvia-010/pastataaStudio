@@ -1,0 +1,252 @@
+body {
+    .top {
+        margin: 0 auto;
+
+        .main {
+           
+            .item {
+               
+                .item_left {
+
+                    .left_group {
+                        padding: 10% 12%;
+
+                        .left_top {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .left_bottom {
+                            .container {
+
+                                .wrap {
+                                    text-align: center;
+
+                                    img {
+                                        width: 27%;
+                                        padding: 5% 2%;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .item_right {
+                    margin-top: -5%;
+                    margin-bottom: 12%;
+
+                    .right_group {
+                        padding: 0 12%;
+                        text-align: left;
+                        color: #fff;
+
+                        h1 {
+                            font-size: 22px;
+                        }
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        .bullet {
+                            font-size: 12px;
+
+                            .point {
+                                padding: 3% 0;
+                            }
+                        }
+
+                        .add {
+
+                            .count {}
+
+                            .tocart {}
+                        }
+                    }
+                }
+            }
+
+            .intro {
+                text-align: center;
+                color: #fff;
+
+                h1 {
+                    font-size: 12px;
+                }
+
+                .pic_group {
+                    .banner {
+                        img {
+                            width: 100%;
+                            
+                        }
+                    }
+
+                    .intro01 {
+                        padding-top: 10%;
+                        margin: 0 10%;
+                        img {
+                            width: 90%;
+                            
+                        }
+                        .des {
+                            padding: 4%;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .intro02 {
+                        margin: 0 10%;
+                        .des {
+                            padding: 4%;
+                            font-size: 12px;
+                        }
+                        img {
+                            width: 90%;
+                            
+                        }
+                    }
+
+                    .smpic {
+                        margin: 0 10%;
+                        .container {
+                            .wrap {
+                                padding-top: 10%;
+                                img {
+                                    width: 90%;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rmd {
+                text-align: center;
+                color: #fff;
+                margin: 10% 0;
+                h1 {
+                    font-size: 12px;
+                    display: inline;
+                }
+                .container {
+                 
+                    .wrap {
+                        padding-top: 10%;
+                    }
+                }
+            }
+
+            .goback {
+                display: flex;
+                justify-content: center;
+                margin: 10% 0;
+
+                a {
+                    background: $secondary;
+                    color: #151515;
+                    width: fit-content;
+                    padding: 1% 4%;
+                    border-radius: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:769px) {
+    body {
+        font-size: 18px;
+        max-width: none;
+
+        .top {
+            .main {
+                padding: 0 6%;
+                .item {
+                    display: flex;
+                     padding-top: 6%;
+                    .item_left {
+                        .left_group {
+                            padding: 0;
+                        }
+                        
+                    }
+
+                    .item_right {
+                        margin: 0;
+                        .right_group {
+                            h1 {
+                                font-size: 28px;
+                                display: inline;
+                            }
+                            h3 {
+                                font-size: 22px;
+                            }
+                            .bullet {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .intro {
+                    padding: 10% 0;
+                    h1 {
+                        font-size: 28px;
+                        display: inline;
+                    }
+                    .pic_group {
+                        .intro01, .intro02 {
+                            display: flex;
+                            margin: 0;
+                            padding-top: 10%;
+                            .des_pic {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .des {
+                                font-size: 16px;
+                            }
+                        }
+                        .smpic {
+                            
+                            margin: 0;
+                            .container {
+                                display: flex;
+                                justify-content: space-between;
+                                .wrap {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .rmd {
+                    margin: 0;
+                    h1 {
+                        font-size: 28px;
+                        display: inline;
+                    }
+                    .container {
+                        display: flex;
+                        justify-content: space-between;
+                        .wrap {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

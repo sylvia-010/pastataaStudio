@@ -19,17 +19,18 @@ body {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                
+
 
                 .card {
-                    
+
                     .container {
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
+
                         .wrap {
                             margin: 2%;
-                         
+
                             .card_type {
                                 // display: flex;
                                 // justify-content: center;
@@ -50,13 +51,14 @@ body {
 
                                             .card_pro {
                                                 width: 50%;
+                                                margin-top: -15px;
                                             }
 
                                             .card_name {
                                                 text-align: center;
                                                 background-color: $primary;
                                                 border-radius: 10px;
-                                                margin: 10%;
+                                                margin-top: 15%;
                                                 font-size: 22px;
                                             }
                                         }
@@ -76,11 +78,12 @@ body {
 
                                             h3 {
                                                 font-size: 22px;
+                                                margin-top: -2px;
                                             }
 
                                             p {
                                                 font-size: 16px;
-                                                padding-top: 5px;
+                                                padding-top: 15px;
                                             }
                                         }
                                     }
@@ -124,10 +127,11 @@ body {
 
         .top {
             .main {
+                padding: 0 6%;
                 .knpasta {
                     .card {
                         .card_wrap {
-                            
+
                             .card_type {}
                         }
                     }
