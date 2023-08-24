@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Hurricane&family=Shippori+Mincho+B1:wght@400;500;600&display=swap");
 body {
   background-color: #151515;
   margin: 0 auto;
   width: 100%;
   max-width: 768px;
+  font-family: "Hurricane", "Shippori Mincho B1", "serif";
 }
 
 ul {
@@ -47,7 +49,6 @@ a {
 .top .nav .nav_right .navbar .navbar_type .deco {
   display: inline;
   border-right: 3px solid #fff;
-  height: 22px;
   padding-left: 10px;
 }
 .top .nav .nav_right .navbar .navbar_type01 {
@@ -159,11 +160,20 @@ a {
   display: flex;
   width: 50%;
 }
+.footer .contact {
+  display: flex;
+  justify-content: center;
+  margin: 7%;
+}
+.footer .contact li {
+  padding: 0 3%;
+}
 .footer p {
   font-size: 8px;
   color: #fff;
   display: flex;
   justify-content: center;
+  padding-bottom: 3%;
 }
 
 @media (min-width: 769px) {
@@ -190,6 +200,9 @@ a {
   }
   body .top .nav .nav_right .navbar .navbar_type a {
     font-size: 22px;
+  }
+  body .top .nav .nav_right .navbar .navbar_type .deco {
+    padding-top: 10px;
   }
   body .top .nav .nav_right .navbar .navbar_type01 {
     margin-top: -2px;
@@ -225,8 +238,9 @@ body .top {
 }
 body .top #knpasta {
   background-color: #208553;
-  padding: 3px 5px;
+  padding: 0px 5px;
   border-radius: 5px;
+  display: inline-block;
 }
 body .top .main .slogan {
   padding-top: 10%;
@@ -386,6 +400,7 @@ body .top .main .intro .pic_group .smpic {
 }
 body .top .main .intro .pic_group .smpic .container .wrap {
   padding-top: 10%;
+  margin: 0 1.5%;
 }
 body .top .main .intro .pic_group .smpic .container .wrap img {
   width: 90%;
@@ -401,6 +416,7 @@ body .top .main .rmd h1 {
 }
 body .top .main .rmd .container .wrap {
   padding-top: 10%;
+  margin: 0 1.5%;
 }
 body .top .main .goback {
   display: flex;
