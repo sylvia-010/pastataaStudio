@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>My cart</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>我的購物車</h1>
+        <div class="item_group">
+            <div class="left"></div>
+            <div class="mid">
+                <div class="top">
+                    <div class="item_name">
+                        <h1></h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="item_price">
+                        <h1>售價：＄120</h1>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="delete"><img src="" alt=""></div>
+            </div>
+        </div>
+        <div class="recipient">
+            <div class="input_wrap">
+                <div class="input_group">
+                    <input id="name" type="text" placeholder="收件人姓名">
+                </div>
+                <div style="margin: 0 -2%;" class="input_group">
+                    <div class="county">
+                        <input id="county" type="text" placeholder="縣市">
+                    </div>
+                    <div class="town">
+                        <input id="town" type="text" placeholder="區域">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <input id="add" type="text" placeholder="地址">
+                </div>
+            </div>
+        </div>
+        <div class="shipping"></div>
+        <div class="total"></div>
+        <span>您同意提供個人資料予本公司為行銷活動通知範圍之蒐集、處理及利用，除非事先經過您的同意，本公司不會其這些個人資料提供給任何第三人，或移作其他目的使用。</span>
+    </div>
+
+</body>
+
+</html>
