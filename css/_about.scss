@@ -1,71 +1,80 @@
 .top {
     margin: 0 auto;
+
     .nav {
-        .nav_left {
-            display: flex;
-            margin: 5%;
-
-            .logo {
+        .nav_group {
+            .nav_left {
                 display: flex;
-                width: 25%;
-            }
+                margin: 5%;
 
-        }
-
-        .nav_right {
-            display: flex;
-            font-size: 10px;
-            margin: -2% 0;
-            padding: 10px 0;
-
-            .navbar {
-                display: flex;
-                margin-left: auto;
-
-                .navbar_type {
-                    display: inline-block;
-                    padding-left: 6px;
-
-                    a {
-                        display: inline;
-
-                    }
-
-                    .deco {
-                        display: inline;
-                        border-right: 3px solid #fff;
-                        padding-left: 10px;
-                    }
-                }
-
-                .navbar_type01 {
+                .logo {
                     display: flex;
-                    padding-left: 6px;
-                    margin-top: -10px;
-
-                    .search {
-                        display: flex;
-                        padding-top: 11px;
-                        width: 80%;
-                    }
-
-                    .text {
-                        display: flex;
-                        font-size: 8px;
-                        color: #ffffff69;
-                        margin: 10px 2px;
-
-                    }
-
-                    .cart {
-                        display: flex;
-                        margin-top: 7px;
-                        width: 50%;
-                    }
+                    width: 25%;
                 }
 
             }
+
+            .nav_right {
+                display: flex;
+                font-size: 10px;
+                margin: -2% 0;
+                padding: 10px 0;
+
+                .navbar {
+                    display: flex;
+                    margin-left: auto;
+
+                    .navbar_type {
+                        display: inline-block;
+                        padding-left: 6px;
+
+                        a {
+                            display: inline;
+
+                        }
+
+                        .deco {
+                            display: inline;
+                            border-right: 3px solid #fff;
+                            padding-left: 10px;
+                        }
+                    }
+
+                    .navbar_type01 {
+                        display: flex;
+
+                        &::before {
+                            content: "";
+                            background: url(../img/Search.svg);
+                            background-size: cover;
+                            width: 25px;
+                            height: 25px;
+                            display: inline-block;
+                        }
+
+                        #search {
+                            background: black;
+                            border: 2px solid black;
+                            border-radius: 5px;
+                            width: 75px;
+                            color: #fff;
+
+
+                        }
+                    }
+
+                    .navbar_type02 {
+                        display: inline-block;
+
+                        .cart {
+                            width: 50%;
+                        }
+                    }
+
+                }
+            }
         }
+
     }
 
     .main {
@@ -183,16 +192,18 @@
     .chef_deco {
         display: flex;
         justify-content: center;
-       img {
-        display: flex;
-        width: 50%;
-       }
+
+        img {
+            display: flex;
+            width: 50%;
+        }
     }
 
     .contact {
         display: flex;
         justify-content: center;
         margin: 7%;
+
         li {
             padding: 0 3%;
         }
@@ -227,56 +238,64 @@
             .nav {
                 margin: none;
 
-                .nav_left {
-                    .logo {
-                        display: flex;
-                        width: 100%;
-                    }
-                }
-
-                .nav_right {
-                    .navbar {
-                        margin-top: -10%;
-                        .navbar_type {
-                            margin: 0 5px;
-    
-                            a {
-                                font-size: 22px;
-                                
-                            }
-                            .deco {
-                                padding-top: 10px;
-                            }
-                        }
-    
-                        .navbar_type01 {
-                           margin-top: -2px;
-    
-                            .deco {
-                                margin: none;
-                                
-                            }
-    
-                            .search {
-                            
-                                padding-top: none;
-                            }
+                .nav_group {
+                    .nav_left {
+                        .logo {
+                            display: flex;
+                            width: 80%;
                         }
                     }
 
+                    .nav_right {
+                         margin-top: -10%;
+                        .navbar {
+                            .navbar_type {
+                                margin: 0 5px;
 
+                                a {
+                                    font-size: 22px;
+
+                                }
+
+                                .deco {
+                                    padding-top: 10px;
+                                }
+                            }
+
+                            .navbar_type01 {
+                                padding: 0 2%;
+                                &:before {
+                                    content: "";
+                                    margin-top: 5px;
+                                }
+                                #search {
+                                    width: 120px;
+                                }
+                            }
+                            .navbar_type02 {
+                                display: flex;
+                                .cart {
+                                    width: 60%;
+                                    padding-top: 5px;
+                                }
+                            }
+
+                        }
+                    }
                 }
 
 
             }
+
             .main {
                 padding: 0 6%;
+
                 .banner {
-                    
+
                     img {
                         display: flex;
                         width: 100%;
-                        
+
                     }
                 }
 
@@ -284,14 +303,17 @@
                     h1 {
                         font-size: 28px;
                     }
+
                     .deco_noodle {
                         margin-top: -55px;
                     }
                 }
+
                 .team {
                     h1 {
                         font-size: 28px;
                     }
+
                     .deco_noodle {
                         margin-top: -55px;
                     }

@@ -21,55 +21,58 @@ a {
 .top {
   margin: 0 auto;
 }
-.top .nav .nav_left {
+.top .nav .nav_group .nav_left {
   display: flex;
   margin: 5%;
 }
-.top .nav .nav_left .logo {
+.top .nav .nav_group .nav_left .logo {
   display: flex;
   width: 25%;
 }
-.top .nav .nav_right {
+.top .nav .nav_group .nav_right {
   display: flex;
   font-size: 10px;
   margin: -2% 0;
   padding: 10px 0;
 }
-.top .nav .nav_right .navbar {
+.top .nav .nav_group .nav_right .navbar {
   display: flex;
   margin-left: auto;
 }
-.top .nav .nav_right .navbar .navbar_type {
+.top .nav .nav_group .nav_right .navbar .navbar_type {
   display: inline-block;
   padding-left: 6px;
 }
-.top .nav .nav_right .navbar .navbar_type a {
+.top .nav .nav_group .nav_right .navbar .navbar_type a {
   display: inline;
 }
-.top .nav .nav_right .navbar .navbar_type .deco {
+.top .nav .nav_group .nav_right .navbar .navbar_type .deco {
   display: inline;
   border-right: 3px solid #fff;
   padding-left: 10px;
 }
-.top .nav .nav_right .navbar .navbar_type01 {
+.top .nav .nav_group .nav_right .navbar .navbar_type01 {
   display: flex;
-  padding-left: 6px;
-  margin-top: -10px;
 }
-.top .nav .nav_right .navbar .navbar_type01 .search {
-  display: flex;
-  padding-top: 11px;
-  width: 80%;
+.top .nav .nav_group .nav_right .navbar .navbar_type01::before {
+  content: "";
+  background: url(../img/Search.svg);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
 }
-.top .nav .nav_right .navbar .navbar_type01 .text {
-  display: flex;
-  font-size: 8px;
-  color: rgba(255, 255, 255, 0.4117647059);
-  margin: 10px 2px;
+.top .nav .nav_group .nav_right .navbar .navbar_type01 #search {
+  background: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 75px;
+  color: #fff;
 }
-.top .nav .nav_right .navbar .navbar_type01 .cart {
-  display: flex;
-  margin-top: 7px;
+.top .nav .nav_group .nav_right .navbar .navbar_type02 {
+  display: inline-block;
+}
+.top .nav .nav_group .nav_right .navbar .navbar_type02 .cart {
   width: 50%;
 }
 .top .main .banner {
@@ -188,30 +191,38 @@ a {
   body .top .nav {
     margin: none;
   }
-  body .top .nav .nav_left .logo {
+  body .top .nav .nav_group .nav_left .logo {
     display: flex;
-    width: 100%;
+    width: 80%;
   }
-  body .top .nav .nav_right .navbar {
+  body .top .nav .nav_group .nav_right {
     margin-top: -10%;
   }
-  body .top .nav .nav_right .navbar .navbar_type {
+  body .top .nav .nav_group .nav_right .navbar .navbar_type {
     margin: 0 5px;
   }
-  body .top .nav .nav_right .navbar .navbar_type a {
+  body .top .nav .nav_group .nav_right .navbar .navbar_type a {
     font-size: 22px;
   }
-  body .top .nav .nav_right .navbar .navbar_type .deco {
+  body .top .nav .nav_group .nav_right .navbar .navbar_type .deco {
     padding-top: 10px;
   }
-  body .top .nav .nav_right .navbar .navbar_type01 {
-    margin-top: -2px;
+  body .top .nav .nav_group .nav_right .navbar .navbar_type01 {
+    padding: 0 2%;
   }
-  body .top .nav .nav_right .navbar .navbar_type01 .deco {
-    margin: none;
+  body .top .nav .nav_group .nav_right .navbar .navbar_type01:before {
+    content: "";
+    margin-top: 5px;
   }
-  body .top .nav .nav_right .navbar .navbar_type01 .search {
-    padding-top: none;
+  body .top .nav .nav_group .nav_right .navbar .navbar_type01 #search {
+    width: 120px;
+  }
+  body .top .nav .nav_group .nav_right .navbar .navbar_type02 {
+    display: flex;
+  }
+  body .top .nav .nav_group .nav_right .navbar .navbar_type02 .cart {
+    width: 60%;
+    padding-top: 5px;
   }
   body .top .main {
     padding: 0 6%;
