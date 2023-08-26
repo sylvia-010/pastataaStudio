@@ -28,6 +28,13 @@
                         display: inline-block;
                         padding-left: 6px;
 
+                        #abouttt {
+                            background-color: $primary;
+                            padding: 0px 5px;
+                            border-radius: 5px;
+                            display: inline-block;
+                        }
+
                         a {
                             display: inline;
 
@@ -247,7 +254,8 @@
                     }
 
                     .nav_right {
-                         margin-top: -10%;
+                        margin-top: -10%;
+
                         .navbar {
                             .navbar_type {
                                 margin: 0 5px;
@@ -264,16 +272,20 @@
 
                             .navbar_type01 {
                                 padding: 0 2%;
+
                                 &:before {
                                     content: "";
                                     margin-top: 5px;
                                 }
+
                                 #search {
                                     width: 120px;
                                 }
                             }
+
                             .navbar_type02 {
                                 display: flex;
+
                                 .cart {
                                     width: 60%;
                                     padding-top: 5px;

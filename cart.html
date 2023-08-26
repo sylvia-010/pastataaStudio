@@ -2,57 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <title>My cart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>My cart</title>
 </head>
 
 <body>
-    <div id="app">
-        <h1>我的購物車</h1>
-        <div class="item_group">
-            <div class="left"></div>
-            <div class="mid">
-                <div class="top">
-                    <div class="item_name">
-                        <h1></h1>
+  <div class="bg-[#151515]">
+    <div class="max-w-4xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <h1 class="text-3xl text-white">我的購物車</h1>
+
+      <form class="mt-12">
+        <div>
+          <ul role="list" class="text-white">
+            <li class="flex py-6 sm:py-10">
+              <div class="flex-shrink-0">
+                <img src="img/intro/pic.svg" alt="Pastataa Studio 蝴蝶麵 - 蝴蝶結的外觀搭配多層次的口感."
+                  class="w-24 h-24 rounded-lg object-center object-cover sm:w-32 sm:h-32">
+              </div>
+
+              <div class="relative ml-4 flex-1 flex flex-col justify-between sm:ml-6">
+                <div class="flex">
+                  <div class="flex justify-between sm:grid sm:grid-cols-2">
+                    <div class="pr-6">
+                      <h3 class="text-[16px]">
+                        <a href="#" class="font-medium text-[#F6D164] hover:text-[#F6D164ba]"> Pastataa Studio 蝴蝶麵 -
+                          蝴蝶結的外觀搭配多層次的口感 </a>
+                      </h3>
+                      <!-- <p class="mt-1 text-sm text-[#cccbcbba]]">Farfalle</p> -->
                     </div>
+
+                    <p class="text-sm font-medium text-[#ffffff] text-right">$120.00</p>
+                  </div>
+
+                  <div class="mt-4 flex items-center sm:block sm:absolute sm:top-0 sm:left-1/2 sm:mt-0">
+                    <label for="quantity-0" class="sr-only">數量, 蝴蝶麵</label>
+                    <select id="quantity-0" name="quantity-0"
+                      class="block max-w-full rounded-md border border-[#F6D164] py-1.5 text-base leading-5 font-medium text-[#151515] text-left shadow-sm focus:outline-none focus:bg-[#F6D164] sm:text-sm">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+
+                    <button type="button"
+                      class="ml-4 text-sm font-medium text-[#cccbcbba] hover:text-[#a1a1a1ba] sm:ml-0 sm:mt-3">
+                      <span>移除</span>
+                    </button>
+                  </div>
                 </div>
-                <div class="bottom">
-                    <div class="item_price">
-                        <h1>售價：＄120</h1>
+
+                <p class="mt-4 flex text-sm text-[#ffffff] space-x-2">
+                  <!-- Heroicon name: solid/check -->
+                  <svg class="flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span>有庫存</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="flex py-6 sm:py-10">
+              <div class="flex-shrink-0">
+                <img src="img/intro/pic.svg" alt="Pastataa Studio 蝴蝶麵 - 蝴蝶結的外觀搭配多層次的口感."
+                  class="w-24 h-24 rounded-lg object-center object-cover sm:w-32 sm:h-32">
+              </div>
+
+              <div class="relative ml-4 flex-1 flex flex-col justify-between sm:ml-6">
+                <div class="flex">
+                  <div class="flex justify-between sm:grid sm:grid-cols-2">
+                    <div class="pr-6">
+                      <h3 class="text-[16px]">
+                        <a href="#" class="font-medium text-[#F6D164] hover:text-[#F6D164ba]"> Pastataa Studio 蝴蝶麵 -
+                          蝴蝶結的外觀搭配多層次的口感 </a>
+                      </h3>
+                      <!-- <p class="mt-1 text-sm text-[#cccbcbba]]">Farfalle</p> -->
                     </div>
-                    <div></div>
+
+                    <p class="text-sm font-medium text-[#ffffff] text-right">$120.00</p>
+                  </div>
+
+                  <div class="mt-4 flex items-center sm:block sm:absolute sm:top-0 sm:left-1/2 sm:mt-0">
+                    <label for="quantity-0" class="sr-only">數量, 蝴蝶麵</label>
+                    <select id="quantity-0" name="quantity-0"
+                      class="block max-w-full rounded-md border border-[#F6D164] py-1.5 text-base leading-5 font-medium text-[#151515] text-left shadow-sm focus:outline-none focus:bg-[#F6D164] sm:text-sm">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+
+                    <button type="button"
+                      class="ml-4 text-sm font-medium text-[#cccbcbba] hover:text-[#a1a1a1ba] sm:ml-0 sm:mt-3">
+                      <span>移除</span>
+                    </button>
+                  </div>
                 </div>
-            </div>
-            <div class="right">
-                <div class="delete"><img src="" alt=""></div>
-            </div>
+
+                <p class="mt-4 flex text-sm text-[#ffffff] space-x-2">
+                  <!-- Heroicon name: solid/check -->
+                  <svg class="flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span>有庫存</span>
+                </p>
+              </div>
+            </li>
+
+            <!-- More products... -->
+          </ul>
         </div>
-        <div class="recipient">
-            <div class="input_wrap">
-                <div class="input_group">
-                    <input id="name" type="text" placeholder="收件人姓名">
-                </div>
-                <div style="margin: 0 -2%;" class="input_group">
-                    <div class="county">
-                        <input id="county" type="text" placeholder="縣市">
-                    </div>
-                    <div class="town">
-                        <input id="town" type="text" placeholder="區域">
-                    </div>
-                </div>
-                <div class="input_group">
-                    <input id="add" type="text" placeholder="地址">
-                </div>
-            </div>
+
+      </form>
+
+      <div class="text-[#fff]">
+        <div>
+          <h3 class="flex mt-[5%]">收件人名稱</h3>
+          <input class="rounded-sm py-[3px] px-[5px] text-[16px] mt-[15px] text-[#151515]" id="recipient" type="text"
+            placeholder="洪總監">
         </div>
-        <div class="shipping"></div>
-        <div class="total"></div>
-        <span>您同意提供個人資料予本公司為行銷活動通知範圍之蒐集、處理及利用，除非事先經過您的同意，本公司不會其這些個人資料提供給任何第三人，或移作其他目的使用。</span>
+        <div>
+          <h3 class="flex mt-[5%]">寄件方式</h3>
+          <div class="flex gap-[15px] mt-[15px]">
+            <input class="rounded-sm py-[3px] px-[5px] text-[16px] text-[#151515]" id="county" type="text"
+              placeholder="高雄市">
+            <input class="rounded-sm py-[3px] px-[5px] text-[16px] text-[#151515]" id="town" type="text"
+              placeholder="苓雅區">
+          </div>
+          <input class="flex w-full mt-[15px] rounded-sm py-[3px] px-[5px] text-[16px] text-[#151515]" id="add"
+            type="text" placeholder="中正二路30號">
+        </div>
+      </div>
+      <div class="mt-10 flex justify-end">
+        <div class="flex flex-col mr-[5%] text-center">
+          <h3 class="text-[#fff]">總付款金額</h3>
+          <h2 class="text-[#F6D164]">$300.00</h2>
+        </div>
+        <div >
+          <button type="submit"
+            class="bg-[#F6D164] rounded-lg shadow-sm py-[3px] px-[20px] text-center font-medium text-[#151515] hover:bg-[#F6D164ba]">結帳</button>
+        </div>
+      </div>
+
+      <div class="mt-6 text-sm text-center text-[#cccbcbba]">
+        <p class="flex justify-end">
+          或 <a href="pasta.html" class="text-[#F6D164] font-medium hover:text-[#F6D164ba]">繼續購物<span aria-hidden="true">
+              &rarr;</span></a>
+        </p>
+      </div>
+
     </div>
+  </div>
+
 
 </body>
 

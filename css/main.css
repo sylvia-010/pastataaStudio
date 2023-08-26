@@ -43,6 +43,12 @@ a {
   display: inline-block;
   padding-left: 6px;
 }
+.top .nav .nav_group .nav_right .navbar .navbar_type #abouttt {
+  background-color: #208553;
+  padding: 0px 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
 .top .nav .nav_group .nav_right .navbar .navbar_type a {
   display: inline;
 }
@@ -514,32 +520,4 @@ body .top .main .goback a {
   body .top .main .rmd .container .wrap img {
     width: 100%;
   }
-}
-body #app {
-  padding: 0 15%;
-  color: #fff;
-  margin: 0 auto;
-  text-align: center;
-}
-body #app h1 {
-  font-size: 22px;
-  margin: 10% 0;
-}
-body #app .item_group .mid .bottom .item_price h1 {
-  font-size: 22px;
-}
-body #app .recipient .input_group {
-  display: flex;
-  margin: 6% 0;
-}
-body #app .recipient .input_group #name, body #app .recipient .input_group #add {
-  width: 100%;
-  padding: 2%;
-}
-body #app .recipient .input_group #county, body #app .recipient .input_group #town {
-  width: 85%;
-  padding: 2%;
-}
-body #app span {
-  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
