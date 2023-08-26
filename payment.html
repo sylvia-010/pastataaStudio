@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Payment</title>
 </head>
-<body>
-    
-    
+
+<body class="w-full max-[768px]:">
+
+    <div class="bg-[#151515] flex justify-center">
+
+
+        <div class="flex flex-col text-center w-[50%] my-[20%]">
+            <div>
+                <div class="inline-block w-[80px] h-[80px] rounded-[50%] bg-[#fff] mb-[15%]">
+                    <div class="flex justify-center pt-[27%]"><svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                            viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #000000
+                                }
+                            </style>
+                            <path
+                                d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z" />
+                        </svg></div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-[#fff]">手機電話號碼-購買商品</h3>
+            </div>
+            <div>
+                <input
+                    class="rounded-xl w-full my-[10%] px-[5%] py-[3%] focus:outline-none focus:border-2 border-[#F6D164]"
+                    id="phone" type="text" placeholder="886 12 345 678">
+            </div>
+
+            <div class="flex flex-row px-[15%] py-[5%] gap-[15%] justify-around">
+                <div>
+                    <div class="w-[45px] h-[45px] pt-[13%] text-[20px] rounded-[50%] bg-[#F6D164]">
+                        <p class="">1</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[45px] h-[45px] pt-[13%] text-[20px] rounded-[50%] bg-[#fff]">
+                        <p class="">2</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[45px] h-[45px] pt-[13%] text-[20px] rounded-[50%] bg-[#fff]">
+                        <p class="">3</p>
+                    </div>
+                </div>
+            </div>
+        <div class="mt-[15%] ml-auto">
+            <button type="submit"
+            class="bg-[#208553] rounded-lg shadow-sm py-[3px] px-[20px] text-center font-medium text-[#151515] hover:bg-[#208553ba]">下一步</button>
+        </div>
+        </div>
+
+    </div>
+    <footer class="mb-[5%] pb-[2%] px-[15%]">
+        <p class="text-[#fff] text-[6px] text-center">
+            您同意提供個人資料予本公司為行銷活動通知範圍之蒐集、處理及利用，除非事先經過您的同意，本公司不會其這些個人資料提供給任何第三人，或移作其他目的使用。</p>
+    </footer>
 </body>
+
 </html>
