@@ -381,6 +381,43 @@ body .top .main .item .item_right .right_group .bullet {
 body .top .main .item .item_right .right_group .bullet .point {
   padding: 3% 0;
 }
+body .top .main .item .item_right .right_group .add {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+body .top .main .item .item_right .right_group .add form {
+  text-align: center;
+  display: flex;
+}
+body .top .main .item .item_right .right_group .add form #minus {
+  border-radius: 50%;
+  background-color: #F6D164;
+  border: 8px solid transparent;
+  color: #fff;
+  padding: 0 5px;
+}
+body .top .main .item .item_right .right_group .add form #quantity {
+  background-color: #151515;
+  border: none;
+  width: 20%;
+  color: #fff;
+  text-align: center;
+}
+body .top .main .item .item_right .right_group .add form #plus {
+  border-radius: 50%;
+  background-color: #F6D164;
+  border: 8px solid transparent;
+  color: #fff;
+  padding: 0 4px;
+}
+body .top .main .item .item_right .right_group .add .tocart {
+  display: flex;
+  font-size: 14px;
+  background-color: #F6D164;
+  border-radius: 5px;
+  padding: 2% 2%;
+}
 body .top .main .intro {
   text-align: center;
   color: #fff;
@@ -485,15 +522,18 @@ body .top .main .goback a {
     font-size: 28px;
     display: inline;
   }
-  body .top .main .intro .pic_group .intro01, body .top .main .intro .pic_group .intro02 {
+  body .top .main .intro .pic_group .intro01,
+  body .top .main .intro .pic_group .intro02 {
     display: flex;
     margin: 0;
     padding-top: 10%;
   }
-  body .top .main .intro .pic_group .intro01 .des_pic img, body .top .main .intro .pic_group .intro02 .des_pic img {
+  body .top .main .intro .pic_group .intro01 .des_pic img,
+  body .top .main .intro .pic_group .intro02 .des_pic img {
     width: 100%;
   }
-  body .top .main .intro .pic_group .intro01 .des, body .top .main .intro .pic_group .intro02 .des {
+  body .top .main .intro .pic_group .intro01 .des,
+  body .top .main .intro .pic_group .intro02 .des {
     font-size: 16px;
   }
   body .top .main .intro .pic_group .smpic {

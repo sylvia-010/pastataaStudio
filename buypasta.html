@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
     <title>Let's buy pasta</title>
@@ -76,8 +77,12 @@
                             <li class="point">＊ 蝴蝶結造型與多層次的口感受多數年輕人青睞</li>
                         </ul>
                         <div class="add">
-                            <div class="count"></div>
-                            <div class="tocart"></div>
+                            <form action="#">
+                                <input id="minus" type="button" value="-" field="quantity">
+                                <input id="quantity" type="text" name="quantity" value="0">
+                                <input id="plus" type="button" value="+" field="quantity">
+                            </form>
+                            <div class="tocart"><a href="">加入購買</a></div>
                         </div>
                     </div>
                 </div>
@@ -164,5 +169,34 @@
 
 
 </body>
+
+<script>
+    
+    $(function () {
+        $('#plus').click(function (e) {
+            event.preventDefault();
+            fieldName = $(this).attr('field');
+            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+            if (!isNaN(currentVal)) {
+                $('input[name=' + fieldName + ']').val(currentVal + 1);
+            }
+            else {
+                $('input[name=' + fieldName + ']').val(0);
+            }
+        });
+
+        $('#minus').click(function (e) {
+            event.preventDefault();
+            fieldName = $(this).attr('field');
+            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+            if (!isNaN(currentVal) && currentVal > 0) {
+                $('input[name=' + fieldName + ']').val(currentVal - 1);
+            }
+            else {
+                $('input[name=' + fieldName + ']').val(0);
+            }
+        });
+    });
+</script>
 
 </html>
