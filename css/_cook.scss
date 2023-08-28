@@ -1,0 +1,128 @@
+body {
+    // overflow: hidden;
+
+    padding: 0;
+    margin: 0;
+
+    .section01 {
+        // width: 100%;
+        // height: 100%;
+        // background-color: #151515;
+
+        .menu_icon_box {
+            z-index: 2;
+            width: fit-content;
+            height: auto;
+            margin: 30px;
+            position: absolute;
+            border-radius: 4px;
+            cursor: pointer;
+
+
+            .line1,
+            .line2,
+            .line3 {
+                width: 35px;
+                height: 2px;
+                margin: 10px 8px;
+                background-color: #fff;
+                border-radius: 50px;
+                transition: 0.2s;
+
+            }
+
+            .line1 .active {
+                transform: translate(0px, 15px)rotate(45deg);
+            }
+
+            .line2 .active {
+                transform: translate(0px, 15px)rotate(45deg);
+                opacity: 0;
+            }
+
+            .line3 .active {
+                transform: translate(0px, -15px)rotate(-45deg);
+            }
+
+        }
+
+        .cook_banner {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .box {
+            width: fit-content;
+            height: 100vh;
+            background-color: $primary;
+            position: relative;
+            text-align: left;
+            z-index: 1;
+            // opacity: 0;
+            left: -500px;
+            pointer-events: none;
+            transition: 0.3s;
+
+            .nav {
+                padding-top: 100px;
+
+                .navbar {
+                    margin: 0 30px;
+
+                    .type {
+                        list-style: none;
+                        margin-bottom: 30px;
+
+                        &:hover {
+                            background-color: #c6c6c66f;
+                            border-radius: 8px;
+                        }
+
+                        a {
+                            color: $secondary;
+                            font-size: 22px;
+                            padding: 10px 30px;
+                            display: block;
+
+                        }
+
+                        .type_topic {
+                            li {
+                                a {
+                                    font-size: 12px;
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .box .active {
+            z-index: 1;
+            left: 0;
+            pointer-events: fill;
+        }
+
+    }
+
+    .section02 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10%;
+
+        .text {
+            color: #fff;
+        }
+    }
+
+
+
+
+
+}

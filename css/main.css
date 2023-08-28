@@ -344,6 +344,96 @@ body .top .main .gocook a {
     padding: 0 6%;
   }
 }
+body {
+  padding: 0;
+  margin: 0;
+}
+body .section01 .menu_icon_box {
+  z-index: 2;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  margin: 30px;
+  position: absolute;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .section01 .menu_icon_box .line1,
+body .section01 .menu_icon_box .line2,
+body .section01 .menu_icon_box .line3 {
+  width: 35px;
+  height: 2px;
+  margin: 10px 8px;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+body .section01 .menu_icon_box .line1 .active {
+  transform: translate(0px, 15px) rotate(45deg);
+}
+body .section01 .menu_icon_box .line2 .active {
+  transform: translate(0px, 15px) rotate(45deg);
+  opacity: 0;
+}
+body .section01 .menu_icon_box .line3 .active {
+  transform: translate(0px, -15px) rotate(-45deg);
+}
+body .section01 .cook_banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body .section01 .box {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100vh;
+  background-color: #208553;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  left: -500px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+body .section01 .box .nav {
+  padding-top: 100px;
+}
+body .section01 .box .nav .navbar {
+  margin: 0 30px;
+}
+body .section01 .box .nav .navbar .type {
+  list-style: none;
+  margin-bottom: 30px;
+}
+body .section01 .box .nav .navbar .type:hover {
+  background-color: rgba(198, 198, 198, 0.4352941176);
+  border-radius: 8px;
+}
+body .section01 .box .nav .navbar .type a {
+  color: #F6D164;
+  font-size: 22px;
+  padding: 10px 30px;
+  display: block;
+}
+body .section01 .box .nav .navbar .type .type_topic li a {
+  font-size: 12px;
+  color: #fff;
+}
+body .section01 .box .active {
+  z-index: 1;
+  left: 0;
+  pointer-events: fill;
+}
+body .section02 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10%;
+}
+body .section02 .text {
+  color: #fff;
+}
+
 body .top {
   margin: 0 auto;
 }
