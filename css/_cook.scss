@@ -341,7 +341,20 @@ body {
 
 }
 
+.backhome {
+    display: flex;
+                justify-content: center;
+                margin: 10% 0;
 
+                a {
+                    background: $secondary;
+                    color: #151515;
+                    width: fit-content;
+                    padding: 1% 4%;
+                    border-radius: 10px;
+                    font-size: 22px;
+                }
+}
 
 @media (min-width:769px) {
     body {
