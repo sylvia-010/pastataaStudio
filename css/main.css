@@ -719,7 +719,7 @@ body {
 .section04 .menu .container .wrap {
   display: flex;
   justify-content: center;
-  margin: 5% 0;
+  margin: 5% 1%;
 }
 .section04 .menu .container .wrap .menu_type {
   width: 265px;
