@@ -90,7 +90,7 @@
 
     .main {
         .banner {
-            padding-top: 2%;
+            margin-top: 15%;
             display: flex;
             justify-content: center;
 
@@ -101,7 +101,7 @@
         }
 
         .slogan {
-            padding-top: 10%;
+            margin-top: 20%;
             display: flex;
             justify-content: center;
 
@@ -112,10 +112,10 @@
         }
 
         .swiper {
-            padding-top: 10%;
+            margin-top: 20%;
             display: flex;
             justify-content: center;
-
+            
             width: 100%;
             height: 100%;
         }
@@ -143,77 +143,87 @@
 
 
         .brand {
-            padding-top: 10%;
+            margin: 20% 0;
             display: flex;
             justify-content: center;
             flex-direction: column;
 
-            h1 {
+            .brand_group {
                 display: flex;
                 justify-content: center;
-                color: #fff;
-                font-size: 12px;
+
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 12px;
+                    margin: 0 2%;
+                }
+    
+                .deco_noodle {
+                    width: 10%;
+                    display: flex;
+                    
+                    // display: flex;
+                    // justify-content: center;
+                    // padding: 0 122px;
+                    // margin-top: -18px;
+    
+    
+                }
             }
 
-            .deco_noodle {
-                display: flex;
-                justify-content: center;
-                padding: 0 122px;
-                margin-top: -18px;
-
-
-            }
 
             .brand_story {
                 display: flex;
                 justify-content: center;
-                padding-top: 10%;
+                padding-top: 5%;
                 img {
                     width: 80%;
                 }
             }
         }
 
-        .team {
-            padding-top: 10%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+        // .team {
+        //     padding-top: 10%;
+        //     display: flex;
+        //     justify-content: center;
+        //     flex-direction: column;
 
-            h1 {
-                display: flex;
-                justify-content: center;
-                color: #fff;
-                font-size: 12px;
-            }
+        //     h1 {
+        //         display: flex;
+        //         justify-content: center;
+        //         color: #fff;
+        //         font-size: 12px;
+        //     }
 
-            .deco_noodle {
-                display: flex;
-                justify-content: center;
-                padding: 0 122px;
-                margin-top: -18px;
+        //     .deco_noodle {
+        //         display: flex;
+        //         justify-content: center;
+        //         padding: 0 122px;
+        //         margin-top: -18px;
 
-            }
+        //     }
 
-            .team_partner {
-                .partner01, .partner02, .partner03 {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                    padding-top: 10%;
-                    .ex01 {
-                        border-radius: 50%;
-                        width: 20%;
-                    }
-                    .ex02 {
-                        width: 50%;
-                    }
-                }
-                .partner03 {
-                    padding-bottom: 10%;
-                }
-            }
-        }
+        //     .team_partner {
+        //         .partner01, .partner02, .partner03 {
+        //             display: flex;
+        //             justify-content: center;
+        //             gap: 20px;
+        //             padding-top: 10%;
+        //             .ex01 {
+        //                 border-radius: 50%;
+        //                 width: 20%;
+        //             }
+        //             .ex02 {
+        //                 width: 50%;
+        //             }
+        //         }
+        //         .partner03 {
+        //             padding-bottom: 10%;
+        //         }
+        //     }
+        // }
 
     }
 }
@@ -347,12 +357,10 @@
                 }
 
                 .brand {
-                    h1 {
-                        font-size: 28px;
-                    }
-
-                    .deco_noodle {
-                        margin-top: -55px;
+                    .brand_group {
+                        h1 {
+                            font-size: 28px;
+                        }
                     }
                 }
 

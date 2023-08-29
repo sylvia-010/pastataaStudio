@@ -53,16 +53,19 @@ body {
         margin-top: 30%;
         position: relative;
     }
+
     .cook_text {
         position: absolute;
         z-index: 2;
         text-align: center;
         padding-top: 30%;
+
         h1 {
             display: inline;
             color: #fff;
             font-size: 42px;
         }
+
         p {
             font-size: 12px;
         }
@@ -344,22 +347,69 @@ body {
 }
 
 .section04 {
-    
+    padding: 0 10%;
+    .menu {
+        h1 {
+            color: $secondary;
+            font-size: 22px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 0 10%;
+            .wrap {
+                display: flex;
+                justify-content: center;
+                margin: 5% 0;
+                .menu_type {
+                    width: 265px;
+                    height: 164px;
+                    border: 3px solid #BB313A;
+                    border-radius: 4%;
+
+                    .type_tg {
+                        display: flex;
+                        justify-content: space-around;
+                        // padding: 3.5% 2.5%;
+                        img {
+                            padding: 0 3%;
+                        }
+
+                        .menu_bg {
+                            width: 265px;
+                            height: 165px;
+                            background-color: #BB313A;
+                            border-top-right-radius: 1%;
+                            border-bottom-right-radius: 1%;
+
+                            h3 {
+                                text-align: center;
+                                color: $secondary;
+                                font-size: 24px;
+                                padding: 3%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .backhome {
     display: flex;
-                justify-content: center;
-                margin: 10% 0;
+    justify-content: center;
+    margin: 15% 0;
 
-                a {
-                    background: $secondary;
-                    color: #151515;
-                    width: fit-content;
-                    padding: 1% 4%;
-                    border-radius: 10px;
-                    font-size: 16px;
-                }
+    a {
+        background: $secondary;
+        color: #151515;
+        width: fit-content;
+        padding: 1% 4%;
+        border-radius: 10px;
+        font-size: 16px;
+    }
 }
 
 @media (min-width:769px) {
@@ -382,19 +432,22 @@ body {
                     align-items: center;
                     width: 40%;
                     margin-top: 5%;
-                    
+
                 }
+
                 .cook_text {
                     padding-top: 5%;
+
                     h1 {
                         font-size: 56px;
                     }
+
                     p {
                         font-size: 16px;
                     }
                 }
 
-               
+
             }
         }
 

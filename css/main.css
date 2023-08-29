@@ -163,7 +163,7 @@ a {
   width: 50%;
 }
 .top .main .banner {
-  padding-top: 2%;
+  margin-top: 15%;
   display: flex;
   justify-content: center;
 }
@@ -172,7 +172,7 @@ a {
   width: 85%;
 }
 .top .main .slogan {
-  padding-top: 10%;
+  margin-top: 20%;
   display: flex;
   justify-content: center;
 }
@@ -181,7 +181,7 @@ a {
   width: 80%;
 }
 .top .main .swiper {
-  padding-top: 10%;
+  margin-top: 20%;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -205,64 +205,33 @@ a {
   color: #fff;
 }
 .top .main .brand {
-  padding-top: 10%;
+  margin: 20% 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.top .main .brand h1 {
+.top .main .brand .brand_group {
+  display: flex;
+  justify-content: center;
+}
+.top .main .brand .brand_group h1 {
   display: flex;
   justify-content: center;
   color: #fff;
   font-size: 12px;
+  margin: 0 2%;
 }
-.top .main .brand .deco_noodle {
+.top .main .brand .brand_group .deco_noodle {
+  width: 10%;
   display: flex;
-  justify-content: center;
-  padding: 0 122px;
-  margin-top: -18px;
 }
 .top .main .brand .brand_story {
   display: flex;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .top .main .brand .brand_story img {
   width: 80%;
-}
-.top .main .team {
-  padding-top: 10%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.top .main .team h1 {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-size: 12px;
-}
-.top .main .team .deco_noodle {
-  display: flex;
-  justify-content: center;
-  padding: 0 122px;
-  margin-top: -18px;
-}
-.top .main .team .team_partner .partner01, .top .main .team .team_partner .partner02, .top .main .team .team_partner .partner03 {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 10%;
-}
-.top .main .team .team_partner .partner01 .ex01, .top .main .team .team_partner .partner02 .ex01, .top .main .team .team_partner .partner03 .ex01 {
-  border-radius: 50%;
-  width: 20%;
-}
-.top .main .team .team_partner .partner01 .ex02, .top .main .team .team_partner .partner02 .ex02, .top .main .team .team_partner .partner03 .ex02 {
-  width: 50%;
-}
-.top .main .team .team_partner .partner03 {
-  padding-bottom: 10%;
 }
 
 .footer {
@@ -351,11 +320,8 @@ a {
   body .top .main .swiper .swiper-slide img {
     width: 100%;
   }
-  body .top .main .brand h1 {
+  body .top .main .brand .brand_group h1 {
     font-size: 28px;
-  }
-  body .top .main .brand .deco_noodle {
-    margin-top: -55px;
   }
   body .top .main .team h1 {
     font-size: 28px;
@@ -373,9 +339,6 @@ body .top #knpasta {
   border-radius: 5px;
   display: inline-block;
 }
-body .top .main .slogan {
-  padding-top: 10%;
-}
 body .top .main .knpasta {
   padding-top: 10%;
   display: flex;
@@ -388,7 +351,7 @@ body .top .main .knpasta .card .container {
   justify-content: center;
 }
 body .top .main .knpasta .card .container .wrap {
-  margin: 2%;
+  margin: 3%;
 }
 body .top .main .knpasta .card .container .wrap .card_type .card_group {
   height: 370px;
@@ -438,7 +401,7 @@ body .top .main .knpasta .card .container .wrap .card_type .card_group .card_bot
 body .top .main .gocook {
   display: flex;
   justify-content: center;
-  margin: 10% 0;
+  margin: 15% 0;
 }
 body .top .main .gocook a {
   background: #F6D164;
@@ -740,10 +703,55 @@ body {
   font-size: 12px;
 }
 
+.section04 {
+  padding: 0 10%;
+}
+.section04 .menu h1 {
+  color: #F6D164;
+  font-size: 22px;
+}
+.section04 .menu .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+.section04 .menu .container .wrap {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+.section04 .menu .container .wrap .menu_type {
+  width: 265px;
+  height: 164px;
+  border: 3px solid #BB313A;
+  border-radius: 4%;
+}
+.section04 .menu .container .wrap .menu_type .type_tg {
+  display: flex;
+  justify-content: space-around;
+}
+.section04 .menu .container .wrap .menu_type .type_tg img {
+  padding: 0 3%;
+}
+.section04 .menu .container .wrap .menu_type .type_tg .menu_bg {
+  width: 265px;
+  height: 165px;
+  background-color: #BB313A;
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+.section04 .menu .container .wrap .menu_type .type_tg .menu_bg h3 {
+  text-align: center;
+  color: #F6D164;
+  font-size: 24px;
+  padding: 3%;
+}
+
 .backhome {
   display: flex;
   justify-content: center;
-  margin: 10% 0;
+  margin: 15% 0;
 }
 .backhome a {
   background: #F6D164;
